@@ -1,6 +1,6 @@
-ld28_practice
+ld28
 =============
 
-LD28 Warmup
+LD28 Game
 
-This is a game about something, alegedly!
+This is a game about something, alegedly, eventually....
