@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ludum Dare 28</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <canvas id="canvas" style="width: 640px; height: 640px;"></canvas>
+
+    <div id="errorModal">
+	    <div id="errorBox">
+	      <div id="closeButton" style="display: none;">X</div>
+        <div id="loadingError" class="block" style="text-align: center;">
+          Loading...
+        </div>
+        <div id="jsError" class="block" class="visibleError">
+          <img src="img/error.png" />
+          You either don't have JavaScript enabled or your browser has thrown an exception. Try updating your browser or use <a href="http://www.google.com/chrome">Google Chrome</a>.
+        </div>
+	      <div id="chromeError" class="block">
+		      <img src="img/chrome.png" />
+		      This game was mostly tested on <a href="http://www.google.com/chrome">Google Chrome</a>. Hopefully everything will work out for you, but if you're experiencing issues consider trying it out on <a href="http://www.google.com/chrome">Chrome</a>!
+	      </div>
+	      <div id="glError" class="block">
+		      <img src="img/webgl.png" />
+		      We can't generate an OpenGL context! Your browser/computer doesn't seem to support WebGL. <a href="http://get.webgl.org/">Read more here!</a> <- Get it or you can't play... :(
+	      </div>
+	      <div id="audioError" class="block">
+		      <img src="img/webaudio.png" />
+		      Your browser doesn't support WebAudio, you won't be able to hear our music or sounds unless you update or change your browser.
+	      </div>
+	      <div id="oggError" class="block">
+		      <img src="img/ogg.png" />
+		      You're browser cannot decode OGG files! Unless you update/change browser/audio codecs, you wont be able to hear any of our audio assets. :(
+	      </div>
+	    </div>
+    </div>
+
+    <script type="application/dart" src="src/Main.dart"></script>
+  </body>
+</html>

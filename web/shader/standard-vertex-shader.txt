@@ -1,0 +1,18 @@
+precision mediump float;
+precision mediump int;
+
+attribute vec2 aVertexPosition;
+attribute vec2 aVertexTextureCoord;
+
+uniform mat4 uMMatrix;
+uniform mat4 uPMatrix;
+uniform mat4 uVMatrix;
+uniform sampler2D uSampler;
+
+varying vec2 vVertexTextureCoord;
+
+void main()
+{
+  gl_Position = uPMatrix * uVMatrix * uMMatrix * vec4(aVertexPosition, 0.0, 1.0);
+  vVertexTextureCoord = aVertexTextureCoord;
+}
